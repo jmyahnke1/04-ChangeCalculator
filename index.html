@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="calc.css">
+
+  <title>Change Calculator</title>
+</head>
+
+<body class="container-fluid">
+  <h1 id="h1Title">Change Calculator</h1>
+  <div class="row bkgrnd rounded entryheight">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="salesTotal" id="topLabelMargin">How much is due for the sale?</label>
+        <input type="number" class="form-control" id="salesTotal">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="cashInput" id="topLabelMargin">How much has the customer given you?</label>
+      <input type="number" class="form-control" id="cashInput">
+    </div>
+  </div>
+
+  <div class="row bkgrnd rounded">
+    <div class="col-md-12">
+      <h1 class="red-text text-center">Dollars</h1>
+      <p class="dollarClass" id="dollarId">0
+      </p>
+    </div>
+  </div>
+
+  <div class="row bkgrnd rounded">
+    <div class="col-md-3">
+      <h2 class="red-text text-center">Quarters</h2>
+      <p class="centsClass" id="quarterId">0
+    </div>
+
+    <div class="col-md-3">
+      <h2 class="red-text text-center">Dimes</h2>
+      <p class="centsClass" id="dimeId">0
+    </div>
+
+    <div class="col-md-3">
+      <h2 class="red-text text-center">Nickels</h2>
+      <p class="centsClass" id="nickelId">0
+    </div>
+
+    <div class="col-md-3">
+      <h2 class="red-text text-center">Pennies</h2>
+      <p class="centsClass" id="pennyId">0
+    </div>
+  </div>
+
+  <div class="row">
+    <button type="button" class="btn btn-primary center-block" id="btnChange">Calculate Change</button>
+  </div>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+  <script type="text/javascript" src="calc.js"></script>
+</body>
+
+</html>
